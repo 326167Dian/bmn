@@ -21,7 +21,7 @@ $ada=mysqli_num_rows($cekganda);
 if ($ada > 0){
 echo "<script type='text/javascript'>alert('Nama Pelanggan dengan nomor telepon ini sudah ada!');history.go(-1);</script>";
 }else{
-	$waktu = date("d-m-Y H:i:s");			
+	$waktu = date('Y-m-d H:i:s');			
     mysqli_query($GLOBALS["___mysqli_ston"], "INSERT INTO pelanggan(
 									nm_pelanggan, 
 									tlp_pelanggan, 
